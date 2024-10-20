@@ -1,18 +1,9 @@
-![Logo](https://github.com/ai4environment/WeatherBench/blob/master/figures/logo_text_left.png?raw=true)
-# WeatherBench: A benchmark dataset for data-driven weather forecasting
+
+# Data Driven weather forecasting(along with dataset)
 
 **🚨🚨🚨 [WeatherBench 2](https://github.com/google-research/weatherbench2) has been released. It provides an updated and much improved benchmark including more comprehensive and more easily accessible datasets.🚨🚨🚨**
 
-[![Binder](https://binder.pangeo.io/badge_logo.svg)](https://binder.pangeo.io/v2/gh/pangeo-data/WeatherBench/master?filepath=quickstart.ipynb)
 
-If you are using this dataset please cite 
-> Stephan Rasp, Peter D. Dueben, Sebastian Scher, Jonathan A. Weyn, Soukayna Mouatadid, and Nils Thuerey, 2020.
-> WeatherBench: A benchmark dataset for data-driven weather forecasting.
-> arXiv: [https://arxiv.org/abs/2002.00469](https://arxiv.org/abs/2002.00469)
-
-This repository contains all the code for downloding and processing the data as well as code for the baseline models
- in the paper.
- 
  ---
  *Note!
  The data has been changed from the original release. Here is a list of changes:*
