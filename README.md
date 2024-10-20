@@ -160,24 +160,3 @@ Because downloading the data can take a long time (several weeks), the workflow 
  
 In addition to the time-dependent fields, the constant fields were downloaded and processed using `scripts
 /download_and_regrid_constants.sh`
- 
-### Downloading the TIGGE IFS baseline
-
-To obtain the operational IFS baseline, we use the [TIGGE Archive](https://confluence.ecmwf.int/display/TIGGE
-). Downloading the data for Z500 and T850 is done in `scripts/download_tigge.py`; regridding is done in `scripts
-/convert_and_regrid_tigge.sh`.
-
-### Regridding the T21 IFS baseline
-
-The T21 baseline was created by Peter Dueben. The raw output can be found in the dataset. To regrid the data `scripts
-/convert_and_regrid_IFS_TXX.sh` was used.
-
-### Downloading and regridding CMIP historical climate model data.
-
-To download historical climate model data use the Snakemake file in `snakemake_configs_CMIP`. Here, we downloaded data from the `MIP-ESM-HR` model. To download other models, search for the download links on the CMIP website and modify the scripts accordingly.
-
-### Extracting single levels from 3D files
-
-If you would like to extract a single level from 3D data, e.g. 850 hPa temperature, you can use `src
-/extract_level.py`. This could be useful to reduce the amount of data that needs to be loaded into RAM. An example
- usage would be: `python extract_level.py --input_fns DATADIR/5.625deg/temperature/*.nc --output_dir OUTDIR --level 850`
